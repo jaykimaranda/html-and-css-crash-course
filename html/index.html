@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+
+/* Default Properties Reseting property */
+
+body,ul,li,h1,h2,a{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #F63232;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    display: inline-block;
+    color: white;
+    border: 8px solid #fff;
+    padding: 6px 12px;
+    border-radius: 36px;
+}
+.banner {
+    position: relative;
+}
+.banner img {
+    max-width: 100%;
+}
+
+.banner .welcome {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    background-color: #FEB614;
+    color: #fff;
+    padding: 30px;
+}
+
+.banner h2 {
+    font-size: 75px;
+}
+.banner h2 span {
+    font-size: 1.3em;
+}
+
+nav {
+    position: sticky;
+    top: 102px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    
+}
+
+nav ul {
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav li {
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #4b4b44;
+}
+
+nav li a.join {
+    color: #FEB614;
+}
+
+main {
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+article h2 {
+    color: #F63232;
+    font-size: 48px;
+}
+article p {
+    line-height: 2em;
+    color: #4b4b4b;
+}
+
+.images { 
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+.images li {
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+
+.images li img {
+    max-width: 100%;
+}
+
+
+section.join {
+    background: #f4f4f4;
+    text-align:center;
+    padding: 60px;
+    color: #4b4b4b;
+}
+.join h2 {
+    font-size: 36px;
+
+}
+
+form input {
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px solid white;
+}
+
+footer {
+    background: #F63232;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/*  responsive styles */
+@media screen and (max-width: 1400px){
+    .banner .welcome h2 {
+    font-size: 60px;
+    }
+
+    nav li {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .banner .welcome h2 {
+      font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+
+    .banner .welcome {
+      position: relative;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    .banner .welcome br {
+        display: none;
+    }
+
+    .banner .welcome h2 {
+        font-size: 25px;
+    }
+    .banner .welcome span {
+        font-size: 1em;
+    }
+
+    .images li {
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+
+   
+}
+
+@media screen and (max-width: 560px){
+
+    nav li {
+        font-size: 20px;
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+
+    }
+    header {
+        position: relative;
+    }
+
+    nav {
+        top: 0;
+    }
+}
+
+
+
+</style>
+<body>
+    <header>
+        <h1>Marioclub</h1>
+    </header>
+
+    <section class="banner">
+        <img src="img/banner.png" alt="Welcome Banner">
+        <div class="welcome">
+            <h2>Welcome to <br><span>MarioClub</span></h2>
+        </div>
+    </section>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="/join.html" class="join">Join the Club</a></li>
+            <li><a href="/news.html" >Latest News</a></li>
+            <li><a href="/games.html" >New Games</a></li>
+            <li><a href="/contact.html" >Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Its a me, Mario</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus excepturi quis nihil similique? Ex iusto, nesciunt totam soluta magni cupiditate omnis, nisi neque eius, esse minima veniam. Quas ad, dignissimos necessitatibus maxime vel odit vitae veritatis tempore corporis officia, tenetur quod aspernatur qui pariatur omnis repellendus architecto illo atque similique?</p>
+        </article>
+
+        <ul class="images">
+            <li><img src="img/thumb-1.png" alt="Mario Thumb 1"></li>
+            <li><img src="img/thumb-2.png" alt="Mario Thumb 2"></li> 
+        </ul>
+
+    </main>
+    <section class="join">
+        <h2>Join Today!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque officia quaerat mollitia placeat rerum neque molestias repudiandae dolore quo minus, accusantium.</p>
+
+        <form action="">
+            <input type="email" name="email" placeholder="Type email & enter" required>
+        </form>
+    </section>
+
+    <footer>
+        <p class="copyright">Copyright 2019 Mario Club</p>
+    </footer>
+</body>
+</html>
